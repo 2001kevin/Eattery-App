@@ -1,0 +1,36 @@
+{
+  "id": "eattery-app-pwa-1",
+  "start_url": "./index.html",
+  "name": "Eattery App",
+  "short_name": "Eattery App",
+  "description": "Recommended restaurant for you",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#D84315",
+  "icons": [
+    {
+      "src": "/icons/eaticon-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/eaticon-128x128.png",
+      "sizes": "129x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/eaticon-256x256.png",
+      "sizes": "257x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/eaticon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
