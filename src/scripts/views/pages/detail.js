@@ -6,7 +6,7 @@ import LikeButtonInitiator from '../../utils/like-button-initiator';
 const Detail = {
   async render() {
     return `
-      <section class="content" id="content" tabindex="0">
+      <section class="content" id="content">
         <div class="list-post" id="list-post">
           <h1 class="list-label">Detail Restaurant
           <div class="underline"></div></h1> 
@@ -21,6 +21,11 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const restaurant = await RestaurantSource.detailRestaurant(url.id);
     const restaurantContainer = document.querySelector('#restaurant');
+    const skipLink = document.querySelector('.skip-link');
+    const content = document.querySelector('#content');
+
+    content.setAttribute('tabindex', '-1');
+    skipLink.setAttribute('href', '#likeButton');
 
     restaurantContainer.innerHTML = createRestaurantDetailTemplate(restaurant);
 
