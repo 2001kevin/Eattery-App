@@ -3,14 +3,7 @@ import {createRestaurantItemTemplate} from '../templates/template-creator';
 const Home = {
   async render() {
     return `
-      <div class="hero">
-        <div class="hero-inner">
-          <h1 class="hero-title">Find Your Best <br> Food Here</h1>
-          <p class="hero-desc">
-            we want to help you to find the food you <br> never meet before
-          </p>
-        </div>
-      </div>
+      
       <section class="content" id="content" tabindex="0">
         <div class="list-post">
           <h1 class="list-label">List Restaurant 
@@ -19,9 +12,7 @@ const Home = {
           </div>
         </div>
       </section>
-      <footer >
-        <p>Copyright &copy; 2022 - Eattery. All Rights Reserved</p>
-      </footer>
+     
     `;
   },
 
