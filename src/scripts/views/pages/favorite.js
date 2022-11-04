@@ -22,6 +22,10 @@ const Favorite = {
 
     const restaurantContainer = document.querySelector('#list-container');
 
+    if (restaurants.length === 0) {
+      restaurantContainer.innerHTML = 'you are not liking any restaurant';
+    }
+
     restaurants.forEach((restaurant)=> {
       restaurantContainer.innerHTML += createRestaurantItemTemplate(restaurant);
     });

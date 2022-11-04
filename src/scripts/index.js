@@ -1,5 +1,7 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import App from './views/app';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import '../styles/main.css';
 import './components/hero';
 import './components/footer';
