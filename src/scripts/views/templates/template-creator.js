@@ -40,7 +40,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 const createRestaurantItemTemplate = (restaurant) => `
     <article class="post-item">
               <img class="post-thumbnail lazyload" 
-                src="${
+                data-src="${
                   restaurant.pictureId ?
                   CONFIG.BASE_IMAGE_URL_MEDIUM + restaurant.pictureId:
                   'https://picsum.photos/id/666/800/450?grayscale'}" 
