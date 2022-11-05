@@ -36,6 +36,12 @@ body {
    top: 0;
 }
 
+#detailButton{
+  min-height: 44px;
+  min-width: 44px;
+  padding: 12px;
+}
+
 .wrapper{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
